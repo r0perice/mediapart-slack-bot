@@ -1,0 +1,16 @@
+name: Build Docker Image
+
+on:
+  push:
+     branches:
+       - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+   ## BUILD IMAGE
+    - name: docker build
+      run: docker build -t docker.pkg.github.com/r0perice/mediapart-discord-bot/mediapart-discord-bot:develop -f Dockerfile .
