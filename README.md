@@ -1,4 +1,5 @@
-# Mediapart Slack Bot ![bot-preview](img/bot.png)
+![bot-preview](img/bot.png)
+# Mediapart Slack Bot 
 
 **[DISCLAIMER] The purpose of this bot is not to bypass Mediapart subscription. [Please support their work](https://www.mediapart.fr/abo/abonnement/normal).**
   
