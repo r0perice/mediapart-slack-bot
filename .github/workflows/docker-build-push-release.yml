@@ -19,7 +19,7 @@ jobs:
       run: docker login docker.pkg.github.com -u $DOCKER_USER -p $DOCKER_PASSWORD
    ## BUILD IMAGE
     - name: docker build
-      run: docker build -t docker.pkg.github.com/r0perice/mediapart-discord-bot/mediapart-discord-bot:${GITHUB_REF##*/} -f Dockerfile .
+      run: docker build -t docker.pkg.github.com/r0perice/mediapart-slack-bot/mediapart-slack-bot:${GITHUB_REF##*/} -f Dockerfile .
     ## PUSH IMAGE TO REGISTRY
     - name: docker push
-      run: docker push docker.pkg.github.com/r0perice/mediapart-discord-bot/mediapart-discord-bot:${GITHUB_REF##*/}
+      run: docker push docker.pkg.github.com/r0perice/mediapart-slack-bot/mediapart-slack-bot:${GITHUB_REF##*/}
